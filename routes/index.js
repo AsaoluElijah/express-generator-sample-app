@@ -12,5 +12,11 @@ router.get("/about", (req, res) => {
     name: "Asaolu Elijah",
   });
 });
+router.post("/new-post", (req, res) => {
+  res.json({
+    status: "success",
+    data: "new post shared successfully",
+  });
+});
 
 module.exports = router;
